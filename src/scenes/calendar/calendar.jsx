@@ -21,7 +21,7 @@ const Calendar = () => {
   const [currentEvents, setCurrentEvents] = useState([]);
 
   const handleDateClick = (selected) => {
-    const title = prompt("Please enter a new title for your event");
+    const title = prompt("Please enter the event u wnat to schedule");
     const calendarApi = selected.view.calendar;
     calendarApi.unselect();
 
@@ -48,7 +48,7 @@ const Calendar = () => {
 
   return (
     <Box m="20px">
-      <Header title="Calendar" subtitle="Full Calendar Interactive Page" />
+      <Header title="Calendar" subtitle="Schedule the farm produce auction you want to schedule" />
 
       <Box display="flex" justifyContent="space-between">
         {/* CALENDAR SIDEBAR */}
